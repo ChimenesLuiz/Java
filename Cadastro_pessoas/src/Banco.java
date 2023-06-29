@@ -44,4 +44,20 @@ public class Banco{
         }
         return dados;
     }
+    public void cadastroPessoa(String nome, String email, String senha){
+        try{
+            conectar();
+            String comando = "INSERT INTO Pessoa(nome, email, senha) VALUES(?, ?, ?)";
+            PreparedStatement statement = conexao.prepareStatement(comando);
+            statement.setString(1, nome);
+            statement.setString(2, email);
+            statement.setString(3, senha);
+            int linhasAfetadas = statement.executeUpdate();
+            statement.close();
+            conexao.close();
+            System.out.println("Linhas afetadas: " + linhasAfetadas);
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
 }
