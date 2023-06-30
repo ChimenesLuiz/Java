@@ -52,7 +52,7 @@ class Main{
                 dados.clear(); //zerando o dicionario dados
                 System.out.print("Qual campo deseja editar: ");
                 escolha = input.nextInt();
-                //switch usado para chamar algum metodo e realizar alguma edicao
+                //switch usado para chamar algum metodo e realizar alguma edicao.
                 switch (escolha){
                     case 1:
                         System.out.print("Digite o novo nome: ");

@@ -6,7 +6,7 @@ public class Pessoa{
     private final String url, user, password;
     private Connection conexao;
     public Pessoa(){
-        //preenchendo informacoes relativas ao BD (sao exemplos)
+        //preenchendo informacoes relativas ao BD (sao exemplos).
         this.url = "exemplo:jdbc:mysql://localhost:3306/GrupoCard";
         this.user = "seu_usuario";
         this.password = "sua_senha";
