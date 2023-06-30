@@ -49,7 +49,6 @@ class Main{
                     System.out.println("[" + (c+1) + "]" + " - " + chave + ": " + valor);
                     c += 1;
                 }
-                dados.clear(); //zerando o dicionario dados
                 System.out.print("Qual campo deseja editar: ");
                 escolha = input.nextInt();
                 //switch usado para chamar algum metodo e realizar alguma edicao

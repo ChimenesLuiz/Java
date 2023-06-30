@@ -7,9 +7,9 @@ public class Pessoa{
     private Connection conexao;
     public Pessoa(){
         //preenchendo informacoes relativas ao BD (sao exemplos)
-        this.url = "exemplo:jdbc:mysql://localhost:3306/GrupoCard";
-        this.user = "seu_usuario";
-        this.password = "sua_senha";
+        this.url = "exemplo: jdbc:mysql://localhost:3306/GrupoCard";
+        this.user = "";
+        this.password = "";
         this.conexao = null;
     }
     private void conectar(){//funcao para conectar com o BD
@@ -28,6 +28,7 @@ public class Pessoa{
             statement.setString(1, nome);
             statement.setString(2, email);
             statement.setString(3, senha);
+            int linhasAfetadas = statement.executeUpdate(); // executando o comando sql
             //encerrando conexao
             statement.close();
             conexao.close();
