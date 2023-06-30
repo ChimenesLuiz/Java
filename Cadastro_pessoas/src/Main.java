@@ -9,7 +9,7 @@ class Main{
         LinkedHashMap<String, String> dados = new LinkedHashMap<>();
         String novo_email = "";
         while (1==1){
-            //menu principa;
+            //menu principal;
             System.out.println("-----------------------------------");
             System.out.println("[1] - Cadastrar Pessoa \n[2] - Editar dados\n[0] - Sair");
             System.out.print("Escolha: ");

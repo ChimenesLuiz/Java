@@ -6,17 +6,10 @@ public class Pessoa{
     private final String url, user, password;
     private Connection conexao;
     public Pessoa(){
-<<<<<<< HEAD
         //preenchendo informacoes relativas ao BD (sao exemplos)
-        this.url = "exemplo: jdbc:mysql://localhost:3306/GrupoCard";
+        this.url = "ex: jdbc:mysql://localhost:3306/GrupoCard";
         this.user = "";
         this.password = "";
-=======
-        //preenchendo informacoes relativas ao BD (sao exemplos).
-        this.url = "exemplo:jdbc:mysql://localhost:3306/GrupoCard";
-        this.user = "seu_usuario";
-        this.password = "sua_senha";
->>>>>>> master
         this.conexao = null;
     }
     private void conectar(){//funcao para conectar com o BD
